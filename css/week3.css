@@ -1,0 +1,71 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px 40px;
+  line-height: 1.6;
+}
+
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+header .intro {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.section-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-card h2 {
+  margin: 0;
+  color: #1a73e8;
+}
+
+.section-card .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 0;
+}
+
+.section-card .content.open {
+  max-height: 1000px;
+  padding: 15px 0 0 0;
+}
+
+.section-card h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.section-card ul {
+  margin: 10px 0 10px 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
