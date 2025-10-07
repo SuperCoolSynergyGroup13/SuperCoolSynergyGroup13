@@ -1,19 +1,12 @@
-## Hi there 👋
+To start the webpage, just open the file index.html.
 
-<!--
-**SuperCoolSynergyGroup13/SuperCoolSynergyGroup13** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+When you do changes to anything, make sure that you ONLY change the quest youre working on.
+Example, if i do quest 2, i ONLY edit quest2.html.
 
-Here are some ideas to get you started:
+A small example on how html works can be found in index.html
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-Hasdsadsadsadsada
-test from KD
+once you have done your changes to your file, do the following steps IN ORDER
+1. git pull
+2. git add *questX.html*
+3. git commit -m "quest X done"
+4. git push
