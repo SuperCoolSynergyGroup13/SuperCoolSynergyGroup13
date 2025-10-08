@@ -1,7 +1,5 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
   margin: 0;
   padding: 20px 40px;
   line-height: 1.6;
@@ -23,7 +21,7 @@ header .intro {
 }
 
 .section-card {
-  background: #fff;
+  background: #d1f8f2;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 15px 25px;

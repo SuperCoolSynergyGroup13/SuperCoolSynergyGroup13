@@ -1,6 +1,7 @@
-html   {
+html {
         overflow: auto;
         font-family: sans-serif;
+        background-color: #d9fff9
 }
 
 html,
@@ -12,7 +13,6 @@ object {
         border: none;
 }
 
-div,
 iframe,
 object {
         display: block;
@@ -26,24 +26,41 @@ iframe {
         height: 90%;
 }
 
-div{
+.header {
         display: flex;
-        align-items:center;
-        justify-content:space-between;
+        align-items: center;
+        justify-content: space-between;
         height: 10%;
+        background-color: #009c82;
 }
 
-a{
-        color: #0000ff;
+.frametext {
+        display: block;
+        align-items: center;
+        padding-left: 200px;
+        padding-top: 100px;
+}
+
+a {
+        color: #d9fff9;
         text-decoration: none;
         cursor: cell;
+        font-weight: 700;
 }
 
-a:visited{
-        color: #0000ff;
+h1, h2, h3, h4 {
+        color: #00473b;
 }
 
-a:hover{
-        color: #ff0000;
+img {
+        border-radius: 10px;
+}
+
+a:visited {
+        color: #d9fff9;
+}
+
+a:hover {
+        color: #00473b;
         text-shadow: 1px 1px #ccc;
 }
