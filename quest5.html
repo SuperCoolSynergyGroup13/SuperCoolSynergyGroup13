@@ -4,6 +4,7 @@
 <head>
   <title>INT Synergy Quests</title>
   <link rel="stylesheet" href="./css/mypdfstyle.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -14,6 +15,21 @@
     <p>
       Example text.
     </p>
+      <pre class="prettyprint">
+profanity_english = ['poop', 'shit', 'fuck']
+profanity_dutch = ['poep', 'kut', 'kanker']
+for profanity in profanity_english:
+    if profanity in user_input_text.lower():
+        response_en += "Please don't swear, this is a doorbell<br/>"
+        response_nl += "Scheld alsjeblieft niet, dit is een deurbel.<br/>"
+for profanity in profanity_dutch:
+    if profanity in user_input_text.lower():
+        response_en += "Please don't swear, this is a doorbell<br/>"
+        response_nl += "Scheld alsjeblieft niet, dit is een deurbel.<br/>"
+if "ping" in user_input_text.lower():
+    response_en += "Pong<br/>"
+    response_nl += "<br/>"
+      </pre>
     <!-- and here -->
   </div>
 </body>
