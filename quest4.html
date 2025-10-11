@@ -1,21 +1,350 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>INT Synergy Quests</title>
-  <link rel="stylesheet" href="./css/mypdfstyle.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quest 4 — Getting to Know Maranda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/quest4.css"/>
 </head>
+<body data-bs-spy="scroll" data-bs-target="#spyNav" data-bs-offset="90" tabindex="0">
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-<body>
-  <div class="frametext">
-    <!-- text between here -->
-    <h1>Quest 4</h1>
+  <header class="site-header py-2">
+    <div class="container d-flex flex-column gap-2">
+      <div class="d-flex align-items-center justify-content-between">
+        <a class="brand h4 m-0" href="#">Quest 4 — Getting to Know Maranda</a>
+        <div class="logo-bar d-none d-md-flex align-items-center gap-3">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saxion%20University%20of%20Applied%20Sciences%20logo.svg" alt="Saxion University of Applied Sciences">
+          <span class="divider"></span>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kiwa%20Logo.png" alt="Kiwa">
+          <span class="divider"></span>
+          <img src="https://agrovision.com/wp-content/uploads/2024/07/logo-agrovision-simple-dark.svg" alt="AgroVision">
+        </div>
+      </div>
+      <nav id="spyNav" class="top-nav d-flex flex-wrap">
+        <a class="nav-link px-0 active" href="#about">About</a>
+        <a class="nav-link px-0" href="#visit">Visit</a>
+        <a class="nav-link px-0" href="#questions">Questions</a>
+        <a class="nav-link px-0" href="#keypoints">Key points</a>
+        <a class="nav-link px-0" href="#reflections">Reflections</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      Example text.
-    </p>
-    <!-- and here -->
-  </div>
+  <section class="section">
+    <div class="container">
+      <span class="lead-tag mb-2 reveal">Kiwa &amp; AgroVision · Apeldoorn</span>
+      <h1 class="mt-2 mb-3 reveal">Quest 4 Summary</h1>
+      <div class="rule mb-3 reveal"></div>
+      <p class="fs-5 mb-1 reveal">
+        For this quest we prepared for and visited two organisations in Apeldoorn:
+        <strong>Kiwa</strong> (Testing, Inspection &amp; Certification) and <strong>AgroVision</strong> (agricultural software).
+      </p>
+      <p class="fs-6 muted reveal">
+        Based on the write-ups from: Constantin · Koroush · Leandro · Niels · Serhii.
+      </p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="mb-3 kicker reveal">About the companies</div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">AgroVision B.V.</h3>
+              <p class="mb-2">
+                Dutch software company (founded 1986, Apeldoorn) building tools for agriculture:
+                livestock &amp; dairy management, crops, finance, and feed formulation. Active in 40+ countries with ~200 staff
+                (growth via the 2024 AgriSyst acquisition), serving about 19,000 customers.
+              </p>
+              <ul class="list-unstyled list-tight mb-3">
+                <li><strong>Products:</strong> pig &amp; dairy tools (e.g., CowVision), crop registration &amp; compliance, farm accounting, feed formulas</li>
+                <li><strong>Focus:</strong> farmer-centric, data-driven, moving legacy apps to modern cloud platforms</li>
+                <li><strong>Values:</strong> Adaptive · Future-proof · Farmer’s mentality · Knowledge-driven</li>
+                <li><strong>Group:</strong> Part of the Kiwa Group</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <span class="tag">Cloud</span>
+                <span class="tag">Data</span>
+                <span class="tag">Agritech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">Kiwa</h3>
+              <p class="mb-2">
+                Global organisation in Testing, Inspection &amp; Certification. Started in 1948 safeguarding drinking water; now active across
+                construction, energy, water, food, agriculture, health and environment with international labs and experts.
+              </p>
+              <ul class="list-unstyled list-tight mb-3">
+                <li><strong>Mission:</strong> create trust through safety, quality and sustainability</li>
+                <li><strong>Known for:</strong> the Kiwa Quality Mark (tested to official standards)</li>
+                <li><strong>CSR:</strong> CO₂ reduction, employee wellbeing, and UN SDGs</li>
+                <li><strong>Scale (2023):</strong> revenue ≈ €1,339.2 million</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <span class="tag">TIC</span>
+                <span class="tag">Quality</span>
+                <span class="tag">Sustainability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 reveal">
+        <div class="col-12">
+          <p class="small muted mb-0">
+            More info: <a href="https://agrovision.com/nl/werken-bij" target="_blank" rel="noopener">AgroVision</a> ·
+            <a href="https://www.kiwa.com/" target="_blank" rel="noopener">Kiwa</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="section">
+    <div class="container">
+      <div class="mb-3 kicker reveal">Visit: what we did</div>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <ol class="mb-0">
+                <li class="mb-2"><strong>Introductions</strong> — presenters, roles and the plan for the visit</li>
+                <li class="mb-2"><strong>Company presentations</strong> — Kiwa’s TIC work; AgroVision’s tools for farms</li>
+                <li class="mb-2"><strong>Q&amp;A</strong> — AI/ML, tech stacks, cybersecurity, internships, workflows</li>
+                <li><strong>Tour</strong> — labs (e.g., water pipes, turf) and the IT floor</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="h6 text-uppercase m-0">What we prepared</h3>
+                <button class="toggle-btn" data-target="#prepList" aria-expanded="true">Collapse</button>
+              </div>
+              <ul id="prepList" class="list-unstyled list-tight mb-0">
+                <li>Agile, Scrum, sprints, retrospectives</li>
+                <li>DevOps, Git, source control</li>
+                <li>Tech stack basics</li>
+                <li>AI/ML and data use</li>
+                <li>Cybersecurity awareness</li>
+                <li>Internship questions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <section id="questions" class="section">
+    <div class="container">
+      <div class="mb-3 kicker reveal">Our questions</div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="h6 text-uppercase m-0">By member</h3>
+                <button class="toggle-btn" data-target="#memberQs" aria-expanded="true">Collapse</button>
+              </div>
+              <ul id="memberQs" class="list-unstyled list-tight mb-3">
+                <li><strong>Constantin:</strong> main development stack? stress level?</li>
+                <li><strong>Niels:</strong> what stack do you use? how do you keep customers happy?</li>
+                <li><strong>Leandro:</strong> how are new certification standards decided? steps &amp; timing for the Quality Mark?</li>
+                <li><strong>Serhii:</strong> is Bureau Veritas a competitor? internships &amp; requirements?</li>
+                <li><strong>Koroush:</strong> real-time alerting with cameras vs. software-only focus?</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h3 class="h6 text-uppercase m-0">Shared topics</h3>
+                <button class="toggle-btn" data-target="#sharedQs" aria-expanded="true">Collapse</button>
+              </div>
+              <ul id="sharedQs" class="list-unstyled list-tight mb-0">
+                <li>AI/ML in products and development</li>
+                <li>Cybersecurity practices</li>
+                <li>Agile/Scrum and DevOps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase mb-2">Internships (Kiwa)</h3>
+              <ul class="list-unstyled list-tight mb-0">
+                <li>Soft skills: communication, critical thinking</li>
+                <li>Helpful: C#, TypeScript, Angular</li>
+                <li>Tools: Teams and VS Code</li>
+              </ul>
+              <div class="mt-3">
+                <span class="tag">C#</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Soft skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <section id="keypoints" class="section">
+    <div class="container">
+      <div class="mb-3 kicker reveal">Key points</div>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <ul class="mb-0 list-unstyled list-tight">
+                <li><strong>Reliability first:</strong> AI-generated code isn’t production-ready by default; quality and security come first.</li>
+                <li><strong>Cybersecurity is everyday work:</strong> AgroVision faces attacks daily; monitoring and backups matter.</li>
+                <li><strong>Certification takes time:</strong> trust builds over years via testing and audits.</li>
+                <li><strong>Cloud transition:</strong> moving desktop systems to accessible cloud solutions.</li>
+                <li><strong>Values:</strong> farmer-centric design and evidence-based decisions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="card h-100">
+            <div class="card-body">
+              <ul class="mb-0 list-unstyled list-tight">
+                <li><strong>Workflows:</strong> Agile/Scrum and DevOps link class practice to industry reality.</li>
+                <li><strong>Internship readiness:</strong> soft skills plus C#, TypeScript, Angular.</li>
+                <li><strong>Context:</strong> Kiwa builds trust through standards; AgroVision enables data-driven farming.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <section id="reflections" class="section">
+    <div class="container">
+      <div class="mb-3 kicker reveal">Reflections</div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h6 mb-2">Serhii</h3>
+            <p class="mb-0">Kiwa’s mission and CSR stood out. I’m focusing on communication skills and learning C# &amp; Angular for internship readiness.</p>
+          </div></div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h6 mb-2">Leandro</h3>
+            <p class="mb-0">Cybersecurity in agriculture is real: daily threats, constant monitoring and solid backups.</p>
+          </div></div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h6 mb-2">Constantin</h3>
+            <p class="mb-0">Software can directly support farming. Good process and professionalism matter even if the stack isn’t my first choice.</p>
+          </div></div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h6 mb-2">Koroush</h3>
+            <p class="mb-0">AI and data are used pragmatically at AgroVision; the focus is reliable software, not new hardware.</p>
+          </div></div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="card h-100"><div class="card-body">
+            <h3 class="h6 mb-2">Niels</h3>
+            <p class="mb-0">Agile/Scrum and DevOps match what I see at work. Flat hierarchies and feedback loops help deliver better tools.</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="small">
+        Quest 4 · Getting to Know Maranda — Synergy Showcase.
+      </div>
+    </div>
+  </footer>
+
+  <button id="btnTop" class="btn-top" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const progress = document.getElementById('scrollProgress');
+    const updateProgress = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = docHeight ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = scrolled + '%';
+    };
+    document.addEventListener('scroll', updateProgress);
+    updateProgress();
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12});
+    revealEls.forEach(el=>io.observe(el));
+
+    const btnTop = document.getElementById('btnTop');
+    const toggleTopBtn = () => {
+      if(window.scrollY > 300){ btnTop.classList.add('show'); } else { btnTop.classList.remove('show'); }
+    };
+    btnTop.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+    document.addEventListener('scroll', toggleTopBtn);
+    toggleTopBtn();
+
+    const navLinks = Array.from(document.querySelectorAll('.top-nav a'));
+    const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const onScroll = () => {
+      const pos = window.scrollY + 120;
+      let current = sections[0];
+      sections.forEach(sec => { if(sec.offsetTop <= pos) current = sec; });
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current.id));
+    };
+    document.addEventListener('scroll', onScroll);
+    onScroll();
+
+    document.querySelectorAll('.toggle-btn').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const targetSel = btn.getAttribute('data-target');
+        const target = document.querySelector(targetSel);
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        if(!target) return;
+        if(expanded){
+          target.style.maxHeight = target.scrollHeight + 'px';
+          requestAnimationFrame(()=>{ target.style.transition = 'max-height .25s ease'; target.style.maxHeight = '0px'; });
+          btn.textContent = 'Expand';
+        }else{
+          target.style.transition = 'max-height .25s ease';
+          target.style.maxHeight = target.scrollHeight + 'px';
+          target.addEventListener('transitionend', function te(){ target.style.maxHeight = ''; target.style.transition=''; target.removeEventListener('transitionend', te); }, {once:true});
+          btn.textContent = 'Collapse';
+        }
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
+      const target = document.querySelector(btn.getAttribute('data-target'));
+      if(target){
+        target.style.overflow='hidden';
+        target.style.maxHeight='none';
+      }
+    });
+  </script>
 </body>
-
 </html>
