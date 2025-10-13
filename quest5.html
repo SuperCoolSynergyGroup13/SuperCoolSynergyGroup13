@@ -1,37 +1,148 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>INT Synergy Quests</title>
-  <link rel="stylesheet" href="./css/mypdfstyle.css">
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <meta charset="UTF-8">
+    <title>INT Synergy Quests</title>
+    <link rel="stylesheet" href="./css/mypdfstyle.css">
+    <link rel="stylesheet" href="./css/quest5.css">
 </head>
 
 <body>
-  <div class="frametext">
-    <!-- text between here -->
-    <h1>Quest 5</h1>
+<h1>Quest 5</h1>
+<p style="text-align:center;">You can ask for explanation or try ChatBot!!!</p>
 
-    <p>
-      Example text.
-    </p>
-      <pre class="prettyprint">
+<div class="gist-frame">
+
+    <!-- 🧩 Part 1 -->
+    <div class="gist-section">
+        <h2>🧩 Part 1: Basic Setup</h2>
+        <small>This section imports datetime for question such as "What day is it?" and declares two variables for responses.</small>
+        <textarea readonly>
+response_en = ""
+response_nl = ""
+        </textarea>
+    </div>
+
+    <!-- ⚙️ Part 2 -->
+    <div class="gist-section">
+        <h2>⚙️ Part 2: Core Functionality</h2>
+        <small>This part contains the main logic and responses.</small>
+        <textarea readonly>
+if "hello" in user_input_text.lower() or \
+        "hi" in user_input_text.lower() or \
+        "hoi" in user_input_text.lower() or \
+        "hallo" in user_input_text.lower():
+    response_en += "Hello there! Welcome! Who's there?'<br/>"
+    response_nl += "Hallo daar! Welkom! Wie is daar?'<br/>"
+
+for token in doc:
+    if token.pos_ == "VERB":
+        response_en += f"You used the verb '{token.text}'.<br/>"
+        response_nl += f"Je gebruikte het werkwoord '{token.text}'.<br/>"
+
+if "ping" in user_input_text.lower():
+    response_en += "Pong<br/>"
+    response_nl += "<br/>"
+
+if "thank you" in user_input_text.lower() or "dank je wel" in user_input_text.lower():
+    response_en += "It's a pleasure<br/>"
+    response_nl += "Alsjeblieft<br/>"
+elif "bye" in user_input_text.lower() or \
+    "goodbye" in user_input_text.lower() or \
+    "tot ziens" in user_input_text.lower() or \
+    "doei" in user_input_text.lower():
+    response_en += "See you later! Have a nice day)<br/>"
+    response_nl += "Tot snel! Prettige dag)<br/>"
+elif "see you" in user_input_text.lower() or \
+    "see ya" in user_input_text.lower() or \
+    "tot snel" in user_input_text.lower():
+    response_en += "I hope I've helped you!"
+    response_nl += "Ik hoop dat ik je geholpen heb!"
+
+if "who are you" in user_input_text.lower() or "wie ben jij" in user_input_text.lower():
+    response_en += "People call me the Talking Doorbell. Nice to meet you!<br/>"
+    response_nl += "Mensen noemen me de Talking Doorbell. Leuk je te ontmoeten!<br/>"
+
+if "where are you from" in user_input_text.lower() or "waar kom je vandaan" in user_input_text.lower():
+    response_en += "Currently, I'm from a so called Python environment. It's cozy in here!<br/>"
+    response_nl += "Momenteel, kom ik uit een zogenaamde Python omgeving. Het is hier gezellig!"
+
+if "how old are you" in user_input_text.lower() or "hoe oud ben je" in user_input_text.lower():
+    response_en += "I'm the same age as Python, which makes me about 34 years old!<br/>"
+    response_nl += "Ik ben even oud als Python, dus ik ben ongeveer 34 jaar oud!"
+
+if "how are you" in user_input_text.lower() or "hoe gaat het" in user_input_text.lower():
+    response_en += "I'm doing great, thanks for asking!<br/>"
+    response_nl += "Met mij gaat het goed, bedankt dat je het vraagt!<br/>"
+
+if "i love you" in user_input_text.lower() or "ik hou van jou" in user_input_text.lower():
+    response_en += "Aww, that's sweet! I love friendly humans too!<br/>"
+    response_nl += "Aww, dat is lief! Ik hou ook van vriendelijke mensen!<br/>"
+        </textarea>
+    </div>
+
+    <!-- 🧠 Part 3 -->
+    <div class="gist-section">
+        <h2>🧠 Part 3: Helper Functions</h2>
+        <small>Here are responses for "What day and time is it". Also in the beginning we imported daytime to show responses</small>
+        <textarea readonly>
+import datetime
+
+if "time" in user_input_text.lower() or "tijd" in user_input_text.lower():
+    current_time = datetime.datetime.now().strftime("%H:%M")
+    response_en += f"The current time is {current_time}.<br/>"
+    response_nl += f"Het is nu {current_time}.<br/>"
+
+if "day" in user_input_text.lower() or "dag" in user_input_text.lower():
+    current_day = datetime.datetime.now().strftime("%A")
+    response_en += f"Today is {current_day}.<br/>"
+    response_nl += f"Vandaag is het {current_day}.<br/>"
+        </textarea>
+    </div>
+
+    <!-- 🚀 Part 4 -->
+    <div class="gist-section">
+        <h2>🚀 Part 4: Final Output or Integration</h2>
+        <small>This part checks if the user’s input contains any bad words in English or Dutch.
+            If it does, the program replies with a polite warning message in both languages.</small>
+        <textarea readonly>
 profanity_english = ['poop', 'shit', 'fuck']
 profanity_dutch = ['poep', 'kut', 'kanker']
+
 for profanity in profanity_english:
     if profanity in user_input_text.lower():
         response_en += "Please don't swear, this is a doorbell<br/>"
         response_nl += "Scheld alsjeblieft niet, dit is een deurbel.<br/>"
+
 for profanity in profanity_dutch:
     if profanity in user_input_text.lower():
         response_en += "Please don't swear, this is a doorbell<br/>"
         response_nl += "Scheld alsjeblieft niet, dit is een deurbel.<br/>"
-if "ping" in user_input_text.lower():
-    response_en += "Pong<br/>"
-    response_nl += "<br/>"
-      </pre>
-    <!-- and here -->
-  </div>
-</body>
 
+if "what makes your day good" in user_input_text.lower() or \
+        "wat maakt je dag goed" in user_input_text.lower():
+    response_en += "Good conversations always make my day better!<br/>"
+    response_nl += "Goede gesprekken maken mijn dag altijd beter!<br/>"
+
+if "are you feeling good" in user_input_text.lower() or \
+        "voel je je goed" in user_input_text.lower():
+    response_en += "Yes, I'm feeling quite good today, thanks!<br/>"
+    response_nl += "Ja, ik voel me vandaag best goed, bedankt!<br/>"
+
+if "tell me a joke" in user_input_text.lower() or \
+        "joke" in user_input_text.lower() or \
+        "grap" in user_input_text.lower() or \
+        "vertel me een grap" in user_input_text.lower():
+    response_en += "Why don’t programmers like nature? It has too many bugs!"
+    response_nl += "Waarom houden programmeurs niet van de natuur? Er zitten te veel bugs in!"
+else:
+    response_en += "If you wanna hear a joke, type in (tell me a joke) or (joke)"
+    response_nl += "Als je een grap wilt horen, typ dan in (vertel me een grap) of (grap)"
+
+return response_en, response_nl
+        </textarea>
+    </div>
+
+</div>
+</body>
 </html>
